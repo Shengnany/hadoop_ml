@@ -12,7 +12,7 @@ def  loadMovieNames():
     with open("u.item") as f:
         for line in f:
             fields = line.split('|')
-            movienNames[int(fields[0])] = fields[1]
+            movieNames[int(fields[0])] = fields[1]
     return movieNames
 
 # take each line of u.data and convert it 
