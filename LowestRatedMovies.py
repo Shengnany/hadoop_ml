@@ -49,4 +49,4 @@ if __name__ == "__main__":
 
     # print them out:
     for result in results:
-        print(movieRatings[result[0],result[1]])
+        print(movieNames[result[0],result[1]])
