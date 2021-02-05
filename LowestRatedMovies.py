@@ -28,8 +28,8 @@ if __name__ == "__main__":
     # load up our movieid -> moviename lookup table
     movieNames = loadMovieNames()
     # look up the raw u.data file and ready to spread across, each row contains a userif, a movieid,a rating and a timestamp
-    lines = sc.textfile('hdfs:///user/maria_dev/ml-100k/u.data')
-    
+    lines = sc.textFile('hdfs:///user/maria_dev/ml-100k/u.data')
+    F
     # RDD abstract a lot: you do not have to think about how your data is spread across HDFS 
     
     # convert to (movieID, (rating, 1.0)), RDD.map()
