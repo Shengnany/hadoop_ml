@@ -2,7 +2,7 @@
 # Predict rating for every mvovie for every user based on other stuff they watch
 
 
-
+import numpy
 from pyspark.sql import SparkSession
 from pyspark.sql import Row
 from pyspark.sql.functions import lit
