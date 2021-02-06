@@ -1,0 +1,5 @@
+SparkContext + SQLContext  => SparkSession 
+You create a SparkSession object and leave that running through your scripts
+You can execute sql queries on it  
+You can create a dataframe of row objects
+
