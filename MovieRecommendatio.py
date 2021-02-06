@@ -22,7 +22,7 @@ def parseInput(line):
     fields = line.split()
     return Row(userID = int(fields[0]), movieID = int(fields[1]), rating = (float(fields[2]),1.0))
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     spark = SparkSession.builder.appName("MovieRecs").getOrCreate()
 
     movieNames = loadMovieNames()
