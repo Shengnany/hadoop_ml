@@ -65,6 +65,6 @@ if __name__ == "__main__":
     topTen = averageAndCounts.orderBy("avg(rating)").take(10)
     # pring them out, converting movieID to names
     for recommendation in topRecommendations:
-        print(movieNames[recommendations['movieID']],recommendations['prediction')
+        print(movieNames[recommendations['movieID']],recommendations['prediction'])
 
     spark.stop()
