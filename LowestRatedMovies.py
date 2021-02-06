@@ -38,6 +38,8 @@ if __name__ == "__main__":
     # reduce to (movieID, (rating, 1.0))
     ratingToTalsAndCount = movieRatings.reduceByKey(lambda movie1, movie2: (movie1[0]+movie2[0],movie2[1]+movie2[1]))
 
+    # additional
+    popularTotalsAndCount = ratingToTalsAndCount.filter(lambda x: x[1][1]>10)
     # map to (movieID, averageRating)
     averageRatings = ratingToTalsAndCount.mapValues(lambda totalAndCount: totalAndCount[0]/totalAndCount[1])
 
